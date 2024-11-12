@@ -17,6 +17,7 @@ while jatek == "number guesser" and ujra == "y":
     while bet > egyenleg:
         print("Nem tudsz ennyit rakni.")
         rakas = int(input("Mennyit szeretnél rakni? "))
+        egyenleg -= bet
     wins = 0
     time.sleep(0.2)
     os.system('cls')
@@ -30,15 +31,12 @@ while jatek == "number guesser" and ujra == "y":
         os.system('cls')
 
     if wins > 1:
-        egyenleg -= bet
         print(f"Egyenleg: {egyenleg}\n")
         print("Több számra nem gondolhatsz, vesztettél.")
     elif wins == 0:
-        egyenleg -= bet
         print(f"Egyenleg: {egyenleg}\n")
         print("Hazudsz, nem tudsz nem gondolni számra, vesztettél.")
     else:
-        egyenleg -= bet
         print(f"Egyenleg: {egyenleg}\n")
         print(f"A te számod: {win}, kitaláltam, vesztettél.")
     ujra = input("\nSzeretnél még játszani?(y/n)\n")   
