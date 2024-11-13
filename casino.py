@@ -16,7 +16,7 @@ while jatek == "number guesser" and ujra == "y":
 
     while bet > egyenleg:
         print("Nem tudsz ennyit rakni.")
-        rakas = int(input("Mennyit szeretnél rakni? "))
+        bet = int(input("Mennyit szeretnél rakni? "))
     egyenleg -= bet
     wins = 0
     time.sleep(0.2)
@@ -87,7 +87,7 @@ while jatek == "plinko" and ujra == "y":
 
     while bet > egyenleg:
         print("Nem tudsz ennyit rakni.")
-        rakas = int(input("Mennyit szeretnél rakni? "))
+        bet = int(input("Mennyit szeretnél rakni? "))
 
     egyenleg -= bet
 
@@ -1001,7 +1001,7 @@ while jatek == "slot" and ujra == "y":
 
     while bet > egyenleg:
         print("Nem tudsz ennyit rakni.")
-        rakas = int(input("Mennyit szeretnél rakni? "))
+        bet = int(input("Mennyit szeretnél rakni? "))
     
     egyenleg -= bet
 
